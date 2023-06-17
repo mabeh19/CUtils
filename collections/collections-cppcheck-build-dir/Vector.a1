@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6142248062287232362">
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="/home/mathias/Documents/C/collections/vector/Vector.c">
+            <location file="/home/mathias/Documents/C/collections/vector/Vector.c" line="5" column="1"/>
+            <symbol>v.array</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="/home/mathias/Documents/C/collections/vector/Vector.c">
+            <location file="/home/mathias/Documents/C/collections/vector/Vector.c" line="6" column="1"/>
+            <symbol>v.array</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="/home/mathias/Documents/C/collections/vector/Vector.c">
+            <location file="/home/mathias/Documents/C/collections/vector/Vector.c" line="7" column="1"/>
+            <symbol>v.array</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="/home/mathias/Documents/C/collections/vector/Vector.c">
+            <location file="/home/mathias/Documents/C/collections/vector/Vector.c" line="8" column="1"/>
+            <symbol>v.array</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="/home/mathias/Documents/C/collections/vector/Vector.c">
+            <location file="/home/mathias/Documents/C/collections/vector/Vector.c" line="9" column="1"/>
+            <symbol>v.array</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="/home/mathias/Documents/C/collections/vector/Vector.c">
+            <location file="/home/mathias/Documents/C/collections/vector/Vector.c" line="10" column="1"/>
+            <symbol>v.array</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="/home/mathias/Documents/C/collections/vector/Vector.c">
+            <location file="/home/mathias/Documents/C/collections/vector/Vector.c" line="11" column="1"/>
+            <symbol>v.array</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Vectoruint8_t_New" lineNumber="5"/>
+    <functiondecl functionName="Vectoruint8_t_Delete" lineNumber="5"/>
+    <functiondecl functionName="Vectoruint8_t_Len" lineNumber="5"/>
+    <functiondecl functionName="Vectoruint8_t_Push" lineNumber="5"/>
+    <functiondecl functionName="Vectoruint8_t_Pop" lineNumber="5"/>
+    <functiondecl functionName="Vectoruint8_t_Get" lineNumber="5"/>
+    <functiondecl functionName="Vectoruint8_t_ToIter" lineNumber="5"/>
+    <functiondecl functionName="Vectoruint16_t_New" lineNumber="6"/>
+    <functiondecl functionName="Vectoruint16_t_Delete" lineNumber="6"/>
+    <functiondecl functionName="Vectoruint16_t_Len" lineNumber="6"/>
+    <functiondecl functionName="Vectoruint16_t_Push" lineNumber="6"/>
+    <functiondecl functionName="Vectoruint16_t_Pop" lineNumber="6"/>
+    <functiondecl functionName="Vectoruint16_t_Get" lineNumber="6"/>
+    <functiondecl functionName="Vectoruint16_t_ToIter" lineNumber="6"/>
+    <functiondecl functionName="Vectoruint32_t_New" lineNumber="7"/>
+    <functiondecl functionName="Vectoruint32_t_Delete" lineNumber="7"/>
+    <functiondecl functionName="Vectoruint32_t_Len" lineNumber="7"/>
+    <functiondecl functionName="Vectoruint32_t_Push" lineNumber="7"/>
+    <functiondecl functionName="Vectoruint32_t_Pop" lineNumber="7"/>
+    <functiondecl functionName="Vectoruint32_t_Get" lineNumber="7"/>
+    <functiondecl functionName="Vectoruint32_t_ToIter" lineNumber="7"/>
+    <functiondecl functionName="Vectoruint64_t_New" lineNumber="8"/>
+    <functiondecl functionName="Vectoruint64_t_Delete" lineNumber="8"/>
+    <functiondecl functionName="Vectoruint64_t_Len" lineNumber="8"/>
+    <functiondecl functionName="Vectoruint64_t_Push" lineNumber="8"/>
+    <functiondecl functionName="Vectoruint64_t_Pop" lineNumber="8"/>
+    <functiondecl functionName="Vectoruint64_t_Get" lineNumber="8"/>
+    <functiondecl functionName="Vectoruint64_t_ToIter" lineNumber="8"/>
+    <functiondecl functionName="Vectorint_New" lineNumber="9"/>
+    <functiondecl functionName="Vectorint_Delete" lineNumber="9"/>
+    <functiondecl functionName="Vectorint_Len" lineNumber="9"/>
+    <functiondecl functionName="Vectorint_Push" lineNumber="9"/>
+    <functiondecl functionName="Vectorint_Pop" lineNumber="9"/>
+    <functiondecl functionName="Vectorint_Get" lineNumber="9"/>
+    <functiondecl functionName="Vectorint_ToIter" lineNumber="9"/>
+    <functiondecl functionName="Vectorfloat_New" lineNumber="10"/>
+    <functiondecl functionName="Vectorfloat_Delete" lineNumber="10"/>
+    <functiondecl functionName="Vectorfloat_Len" lineNumber="10"/>
+    <functiondecl functionName="Vectorfloat_Push" lineNumber="10"/>
+    <functiondecl functionName="Vectorfloat_Pop" lineNumber="10"/>
+    <functiondecl functionName="Vectorfloat_Get" lineNumber="10"/>
+    <functiondecl functionName="Vectorfloat_ToIter" lineNumber="10"/>
+    <functiondecl functionName="Vectordouble_New" lineNumber="11"/>
+    <functiondecl functionName="Vectordouble_Delete" lineNumber="11"/>
+    <functiondecl functionName="Vectordouble_Len" lineNumber="11"/>
+    <functiondecl functionName="Vectordouble_Push" lineNumber="11"/>
+    <functiondecl functionName="Vectordouble_Pop" lineNumber="11"/>
+    <functiondecl functionName="Vectordouble_Get" lineNumber="11"/>
+    <functiondecl functionName="Vectordouble_ToIter" lineNumber="11"/>
+    <functioncall functionName="Err_double"/>
+    <functioncall functionName="Err_float"/>
+    <functioncall functionName="Err_int"/>
+    <functioncall functionName="Err_size_t"/>
+    <functioncall functionName="Err_uint16_t"/>
+    <functioncall functionName="Err_uint32_t"/>
+    <functioncall functionName="Err_uint64_t"/>
+    <functioncall functionName="Err_uint8_t"/>
+    <functioncall functionName="Iterator_FromArray"/>
+    <functioncall functionName="Ok_double"/>
+    <functioncall functionName="Ok_float"/>
+    <functioncall functionName="Ok_int"/>
+    <functioncall functionName="Ok_size_t"/>
+    <functioncall functionName="Ok_uint16_t"/>
+    <functioncall functionName="Ok_uint32_t"/>
+    <functioncall functionName="Ok_uint64_t"/>
+    <functioncall functionName="Ok_uint8_t"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="realloc"/>
+  </FileInfo>
+</analyzerinfo>

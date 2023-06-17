@@ -1,0 +1,54 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-fsanitize=address",
+      "-o",
+      "test",
+      "test.c"
+    ],
+    "directory": "/home/mathias/Documents/C/collections",
+    "file": "/home/mathias/Documents/C/collections/test.c",
+    "output": "/home/mathias/Documents/C/collections/test"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-fsanitize=address",
+      "-o",
+      "test",
+      "iterator/Iterator.c"
+    ],
+    "directory": "/home/mathias/Documents/C/collections",
+    "file": "/home/mathias/Documents/C/collections/iterator/Iterator.c",
+    "output": "/home/mathias/Documents/C/collections/test"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-fsanitize=address",
+      "-o",
+      "test",
+      "linked_list/LinkedList.c"
+    ],
+    "directory": "/home/mathias/Documents/C/collections",
+    "file": "/home/mathias/Documents/C/collections/linked_list/LinkedList.c",
+    "output": "/home/mathias/Documents/C/collections/test"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-fsanitize=address",
+      "-o",
+      "test",
+      "vector/Vector.c"
+    ],
+    "directory": "/home/mathias/Documents/C/collections",
+    "file": "/home/mathias/Documents/C/collections/vector/Vector.c",
+    "output": "/home/mathias/Documents/C/collections/test"
+  }
+]

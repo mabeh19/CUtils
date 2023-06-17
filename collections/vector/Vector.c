@@ -1,0 +1,13 @@
+#include <stdlib.h>
+#include "Vector.h"
+
+
+DEFINE_VECTOR_TYPE(uint8_t)
+DEFINE_VECTOR_TYPE(uint16_t)
+DEFINE_VECTOR_TYPE(uint32_t)
+DEFINE_VECTOR_TYPE(uint64_t)
+DEFINE_VECTOR_TYPE(int)
+DEFINE_VECTOR_TYPE(float)
+DEFINE_VECTOR_TYPE(double)
+
+

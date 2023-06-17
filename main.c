@@ -10,6 +10,7 @@ typedef struct Foo {
 } Foo_t;
 
 void test_hashmap();
+void test_vector();
 
 void vectorCallback(void *elemData)
 {
@@ -25,6 +26,7 @@ void printElem(void *elem)
 int main(int argc, char *argv[])
 {
     test_hashmap();
+    test_vector();
 }
 
 void test_hashmap()

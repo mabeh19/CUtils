@@ -1,0 +1,13 @@
+VectorFoo_t_New call:[malloc,return,sizeof]
+VectorFoo_t_Delete call:[free] noreturn:[free]
+VectorFoo_t_Len call:[return] noreturn:[return]
+VectorFoo_t_Push call:[realloc,return,sizeof] noreturn:[realloc,return]
+VectorFoo_t_Pop call:[memset,realloc,return,sizeof] noreturn:[realloc,return]
+VectorFoo_t_Get call:[return] noreturn:[return]
+VectorFoo_t_ToIter call:[Iterator_FromArray,sizeof] noreturn:[Iterator_FromArray]
+print call:[printf] noreturn:[printf]
+reverse
+main call:[test_iter_filter]
+test_filter
+test_print_int call:[printf] noreturn:[printf]
+test_iter_filter call:[Iterator_Delete,Iterator_Filter,Iterator_ForEach,Vectorint_Delete,Vectorint_New,Vectorint_Push,Vectorint_ToIter] noreturn:[Vectorint_Delete,Vectorint_Push]
