@@ -1,5 +1,0 @@
-LinkedList_New call:[malloc,return,sizeof]
-LinkedList_Get call:[return] noreturn:[return]
-LinkedList_Len call:[return] noreturn:[return]
-LinkedList_Push call:[malloc,return,sizeof] noreturn:[return]
-LinkedList_Pop call:[free,return] noreturn:[return]

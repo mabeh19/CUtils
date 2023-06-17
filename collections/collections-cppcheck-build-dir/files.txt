@@ -1,4 +1,0 @@
-test.a1::/home/mathias/Documents/C/collections/test.c
-Iterator.a1::/home/mathias/Documents/C/collections/iterator/Iterator.c
-LinkedList.a1::/home/mathias/Documents/C/collections/linked_list/LinkedList.c
-Vector.a1::/home/mathias/Documents/C/collections/vector/Vector.c
