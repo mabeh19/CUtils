@@ -1,0 +1,7 @@
+hashmap.a1::/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c
+Iterator.a1::/home/mathias/Documents/C/CUtils/collections/iterator/Iterator.c
+keyvec.a1::/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c
+LinkedList.a1::/home/mathias/Documents/C/CUtils/collections/linked_list/LinkedList.c
+Vector.a1::/home/mathias/Documents/C/CUtils/collections/vector/Vector.c
+cstring.a1::/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c
+main.a1::/home/mathias/Documents/C/CUtils/datatypes/string/main.c

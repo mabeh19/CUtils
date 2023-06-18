@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10.3"/>
+    <errors>
+        <error id="memleak" severity="error" msg="Memory leak: newTable" verbose="Memory leak: newTable" cwe="401" file0="collections/hashmap/hashmap.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/hashmap/hashmap.c" line="121"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;index&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;index&amp;#039; is assigned a value that is never used." cwe="563" file0="collections/hashmap/hashmap.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/hashmap/hashmap.c" line="112"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;newTable&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;newTable&amp;#039; is assigned a value that is never used." cwe="563" file0="collections/hashmap/hashmap.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/hashmap/hashmap.c" line="119"/>
+        </error>
+        <error id="arithOperationsOnVoidPointer" severity="portability" msg="&amp;#039;array&amp;#039; is of type &amp;#039;const void *&amp;#039;. When using void pointers in calculations, the behaviour is undefined." verbose="&amp;#039;array&amp;#039; is of type &amp;#039;const void *&amp;#039;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &amp;#039;void *&amp;#039; is a GNU C extension, which defines the &amp;#039;sizeof(void)&amp;#039; to be 1." cwe="467" file0="collections/iterator/Iterator.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/iterator/Iterator.c" line="18"/>
+        </error>
+        <error id="arithOperationsOnVoidPointer" severity="portability" msg="&amp;#039;buffer&amp;#039; is of type &amp;#039;void *&amp;#039;. When using void pointers in calculations, the behaviour is undefined." verbose="&amp;#039;buffer&amp;#039; is of type &amp;#039;void *&amp;#039;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &amp;#039;void *&amp;#039; is a GNU C extension, which defines the &amp;#039;sizeof(void)&amp;#039; to be 1." cwe="467" file0="collections/iterator/Iterator.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/iterator/Iterator.c" line="65"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;vec-&amp;gt;__first__&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;vec-&amp;gt;__first__&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="collections/key_vec/keyvec.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/key_vec/keyvec.c" line="122" info="vec-&amp;gt;__first__ is overwritten"/>
+            <location file="collections/key_vec/keyvec.c" line="119" info="vec-&amp;gt;__first__ is assigned"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="collections/vector/Vector.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/vector/Vector.c" line="5"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="collections/vector/Vector.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/vector/Vector.c" line="6"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="collections/vector/Vector.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/vector/Vector.c" line="7"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="collections/vector/Vector.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/vector/Vector.c" line="8"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="collections/vector/Vector.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/vector/Vector.c" line="9"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="collections/vector/Vector.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/vector/Vector.c" line="10"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: v.array" verbose="Memory leak: v.array" cwe="401" file0="collections/vector/Vector.c" sinceDate="dd.MM.yyyy">
+            <location file="collections/vector/Vector.c" line="11"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." verbose="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." cwe="686" file0="datatypes/string/main.c" sinceDate="dd.MM.yyyy">
+            <location file="datatypes/string/main.c" line="16"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." verbose="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." cwe="686" file0="datatypes/string/main.c" sinceDate="dd.MM.yyyy">
+            <location file="datatypes/string/main.c" line="16"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="portability" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." cwe="686" file0="datatypes/string/main.c" sinceDate="dd.MM.yyyy">
+            <location file="datatypes/string/main.c" line="29"/>
+        </error>
+    </errors>
+</results>

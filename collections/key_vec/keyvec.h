@@ -6,7 +6,10 @@
 #include <sys/types.h>
 #include <stdint.h>
 
-typedef struct {} KeyVector;
+#include "../iterator/Iterator.h"
+
+
+typedef struct KeyVector KeyVector;
 
 typedef void (*KeyVectorCallback)(void *vectorElem);
 
@@ -23,5 +26,8 @@ void *KeyVector_pop_front(KeyVector *vector);
 void KeyVector_foreach(KeyVector *vector, KeyVectorCallback callback);
 void KeyVector_print(KeyVector *vector, KeyVectorCallback printMethod);
 void KeyVector_getKeyValPair(KeyVector *vector, uint32_t index, void **key, void **data);
+
+
+Iterator* KeyVector_ToIter(KeyVector *vector);
 
 #endif

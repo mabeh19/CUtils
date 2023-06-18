@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5425489716835499071">
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;vec-&gt;__first__&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;vec-&gt;__first__&apos; is reassigned a value before the old one has been used." cwe="563" file0="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c">
+            <location file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="122" column="24" info="vec-&gt;__first__ is overwritten"/>
+            <location file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="119" column="32" info="vec-&gt;__first__ is assigned"/>
+            <symbol>vec-&gt;__first__</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" call-funcname="__alloc__elem" call-argnr="2" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="100" col="48" my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:19:6" my-argnr="2"/>
+<function-call call-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" call-funcname="__alloc__elem" call-argnr="2" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="115" col="48" my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:20:6" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:25:6" my-argnr="3" my-argname="key" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="167" col="10" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:25:6" my-argnr="4" my-argname="data" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="168" col="10" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" my-argnr="1" my-argname="vector" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="174" col="36" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" my-argnr="2" my-argname="key" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="176" col="35" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" my-argnr="3" my-argname="data" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="177" col="36" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" my-argnr="1" my-argname="vector" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="174" col="36" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" my-argnr="2" my-argname="key" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="176" col="35" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c:25:32" my-argnr="3" my-argname="data" file="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c" line="177" col="36" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="KeyVector_new" lineNumber="27"/>
+    <functiondecl functionName="KeyVector_delete" lineNumber="39"/>
+    <functiondecl functionName="KeyVector_get" lineNumber="59"/>
+    <functiondecl functionName="KeyVector_first" lineNumber="75"/>
+    <functiondecl functionName="KeyVector_last" lineNumber="82"/>
+    <functiondecl functionName="KeyVector_len" lineNumber="89"/>
+    <functiondecl functionName="KeyVector_push_back" lineNumber="96"/>
+    <functiondecl functionName="KeyVector_push_front" lineNumber="111"/>
+    <functiondecl functionName="KeyVector_pop_back" lineNumber="126"/>
+    <functiondecl functionName="KeyVector_pop_front" lineNumber="138"/>
+    <functiondecl functionName="KeyVector_foreach" lineNumber="150"/>
+    <functiondecl functionName="KeyVector_getKeyValPair" lineNumber="160"/>
+    <functiondecl functionName="__alloc__elem" lineNumber="171"/>
+    <functiondecl functionName="KeyVector_print" lineNumber="181"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="__alloc__elem"/>
+    <functioncall functionName="callback"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcmp"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="printMethod"/>
+    <functioncall functionName="printf"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14371230352126885378">
+        <error id="memleak" severity="error" msg="Memory leak: newTable" verbose="Memory leak: newTable" cwe="401" file0="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c">
+            <location file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="121" column="1"/>
+            <symbol>newTable</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;index&apos; is assigned a value that is never used." verbose="Variable &apos;index&apos; is assigned a value that is never used." cwe="563" file0="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c">
+            <location file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="112" column="40"/>
+            <symbol>index</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;newTable&apos; is assigned a value that is never used." verbose="Variable &apos;newTable&apos; is assigned a value that is never used." cwe="563" file0="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c">
+            <location file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="119" column="30"/>
+            <symbol>newTable</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:25:6" call-funcname="KeyVector_getKeyValPair" call-argnr="3" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="110" col="48" call-argexpr="&amp;k" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:25:6" call-funcname="KeyVector_getKeyValPair" call-argnr="4" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="110" col="48" call-argexpr="&amp;v" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c:20:15" call-funcname="__hashingFunction__" call-argnr="2" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="70" col="24" my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.h:16:7" my-argnr="2"/>
+<function-call call-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c:20:15" call-funcname="__hashingFunction__" call-argnr="2" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="81" col="24" my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.h:15:6" my-argnr="2"/>
+<function-call call-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:19:6" call-funcname="KeyVector_push_back" call-argnr="3" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="84" col="9" my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.h:15:6" my-argnr="3"/>
+<function-call call-id="/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.h:24:6" call-funcname="KeyVector_print" call-argnr="2" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="95" col="17" my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.h:17:6" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c:20:15" my-argnr="1" my-argname="map" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="27" col="33" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c:117:13" my-argnr="1" my-argname="map" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="119" col="40" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c:123:13" my-argnr="1" my-argname="map" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="125" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c:20:15" my-argnr="1" my-argname="map" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="27" col="33" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c:117:13" my-argnr="1" my-argname="map" file="/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c" line="119" col="40" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="__hashingFunction__" lineNumber="22"/>
+    <functiondecl functionName="HashMap_new" lineNumber="36"/>
+    <functiondecl functionName="HashMap_delete" lineNumber="52"/>
+    <functiondecl functionName="HashMap_get" lineNumber="67"/>
+    <functiondecl functionName="HashMap_insert" lineNumber="78"/>
+    <functiondecl functionName="HashMap_print" lineNumber="89"/>
+    <functiondecl functionName="HashMap_reinitTable" lineNumber="100"/>
+    <functiondecl functionName="HashMap_expandTable" lineNumber="117"/>
+    <functiondecl functionName="HashMap_shrinkTable" lineNumber="123"/>
+    <functioncall functionName="KeyVector_delete"/>
+    <functioncall functionName="KeyVector_get"/>
+    <functioncall functionName="KeyVector_getKeyValPair"/>
+    <functioncall functionName="KeyVector_len"/>
+    <functioncall functionName="KeyVector_new"/>
+    <functioncall functionName="KeyVector_print"/>
+    <functioncall functionName="KeyVector_push_back"/>
+    <functioncall functionName="__hashingFunction__"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="realloc"/>
+  </FileInfo>
+</analyzerinfo>

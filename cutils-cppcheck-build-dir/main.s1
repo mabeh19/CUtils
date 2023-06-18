@@ -1,0 +1,1 @@
+main call:[String_append,String_contains,String_delete,String_len,String_new,String_push,printf,scanf,strlen] noreturn:[String_delete,printf]

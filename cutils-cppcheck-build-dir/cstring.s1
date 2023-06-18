@@ -1,0 +1,6 @@
+String_new call:[calloc,malloc,return,sizeof,strcpy,strlen]
+String_delete call:[free] noreturn:[free]
+String_len call:[return]
+String_append call:[realloc,strcat,strlen] noreturn:[strcat]
+String_push call:[realloc]
+String_contains call:[strlen,strncmp]

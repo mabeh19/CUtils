@@ -22,7 +22,7 @@ int main()
 
 
 
-    scanf("%s", buff);
+    scanf("%999s", buff);
 
     String* string = String_new(buff);
 

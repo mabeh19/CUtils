@@ -1,0 +1,9 @@
+__hashingFunction__
+HashMap_new call:[KeyVector_new,malloc,return,sizeof] noreturn:[KeyVector_new]
+HashMap_delete call:[KeyVector_delete,free] noreturn:[KeyVector_delete,free]
+HashMap_get call:[KeyVector_get,__hashingFunction__]
+HashMap_insert call:[KeyVector_push_back,__hashingFunction__]
+HashMap_print call:[KeyVector_print,printf] noreturn:[KeyVector_print,printf]
+HashMap_reinitTable call:[KeyVector_getKeyValPair,KeyVector_len,__hashingFunction__] noreturn:[__hashingFunction__]
+HashMap_expandTable call:[realloc,sizeof] noreturn:[realloc]
+HashMap_shrinkTable call:[realloc,sizeof] noreturn:[realloc]

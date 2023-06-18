@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14216700340631601028">
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." cwe="686" file0="/home/mathias/Documents/C/CUtils/datatypes/string/main.c">
+            <location file="/home/mathias/Documents/C/CUtils/datatypes/string/main.c" line="16" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%lu in format string (no. 2) requires &apos;unsigned long&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." verbose="%lu in format string (no. 2) requires &apos;unsigned long&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." cwe="686" file0="/home/mathias/Documents/C/CUtils/datatypes/string/main.c">
+            <location file="/home/mathias/Documents/C/CUtils/datatypes/string/main.c" line="16" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="portability" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." cwe="686" file0="/home/mathias/Documents/C/CUtils/datatypes/string/main.c">
+            <location file="/home/mathias/Documents/C/CUtils/datatypes/string/main.c" line="29" column="5"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:12:9" call-funcname="String_new" call-argnr="1" file="/home/mathias/Documents/C/CUtils/datatypes/string/main.c" line="27" col="32" call-argexpr="buff" call-argvaluetype="7" call-argvalue="1000"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="5"/>
+    <functioncall functionName="String_append"/>
+    <functioncall functionName="String_contains"/>
+    <functioncall functionName="String_delete"/>
+    <functioncall functionName="String_len"/>
+    <functioncall functionName="String_new"/>
+    <functioncall functionName="String_push"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="strlen"/>
+  </FileInfo>
+</analyzerinfo>

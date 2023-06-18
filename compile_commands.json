@@ -1,0 +1,79 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "--std=c17",
+      "-O3",
+      "-c",
+      "./collections/hashmap/hashmap.c"
+    ],
+    "directory": "/home/mathias/Documents/C/CUtils",
+    "file": "/home/mathias/Documents/C/CUtils/collections/hashmap/hashmap.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "--std=c17",
+      "-O3",
+      "-c",
+      "./collections/iterator/Iterator.c"
+    ],
+    "directory": "/home/mathias/Documents/C/CUtils",
+    "file": "/home/mathias/Documents/C/CUtils/collections/iterator/Iterator.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "--std=c17",
+      "-O3",
+      "-c",
+      "./collections/key_vec/keyvec.c"
+    ],
+    "directory": "/home/mathias/Documents/C/CUtils",
+    "file": "/home/mathias/Documents/C/CUtils/collections/key_vec/keyvec.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "--std=c17",
+      "-O3",
+      "-c",
+      "./collections/linked_list/LinkedList.c"
+    ],
+    "directory": "/home/mathias/Documents/C/CUtils",
+    "file": "/home/mathias/Documents/C/CUtils/collections/linked_list/LinkedList.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "--std=c17",
+      "-O3",
+      "-c",
+      "./collections/vector/Vector.c"
+    ],
+    "directory": "/home/mathias/Documents/C/CUtils",
+    "file": "/home/mathias/Documents/C/CUtils/collections/vector/Vector.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "--std=c17",
+      "-O3",
+      "-c",
+      "./datatypes/string/cstring.c"
+    ],
+    "directory": "/home/mathias/Documents/C/CUtils",
+    "file": "/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "--std=c17",
+      "-O3",
+      "-c",
+      "./datatypes/string/main.c"
+    ],
+    "directory": "/home/mathias/Documents/C/CUtils",
+    "file": "/home/mathias/Documents/C/CUtils/datatypes/string/main.c"
+  }
+]

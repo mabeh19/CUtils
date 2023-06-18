@@ -1,0 +1,14 @@
+KeyVector_new call:[malloc,return,sizeof]
+KeyVector_delete call:[free] noreturn:[free]
+KeyVector_get call:[memcmp]
+KeyVector_first
+KeyVector_last
+KeyVector_len
+KeyVector_push_back call:[__alloc__elem]
+KeyVector_push_front call:[__alloc__elem]
+KeyVector_pop_back call:[free]
+KeyVector_pop_front call:[free]
+KeyVector_foreach call:[callback] noreturn:[callback]
+KeyVector_getKeyValPair
+__alloc__elem call:[malloc,memcpy,sizeof]
+KeyVector_print call:[printMethod,printf] noreturn:[printMethod,printf]

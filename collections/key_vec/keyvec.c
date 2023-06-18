@@ -197,3 +197,9 @@ AS_INTERNAL();
         }
         printf(" ]\n");
 }
+
+
+Iterator* KeyVector_ToIter(KeyVector *vector)
+{
+
+}

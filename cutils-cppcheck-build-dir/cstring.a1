@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2984315556805696898">
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:12:9" my-argnr="1" my-argname="str" file="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c" line="13" col="26" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:14:6" my-argnr="2" my-argname="str" file="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c" line="35" col="22" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:17:6" my-argnr="2" my-argname="pattern" file="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c" line="52" col="32" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:12:9" my-argnr="1" my-argname="str" file="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c" line="13" col="26" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:13:8" my-argnr="1" my-argname="string" file="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c" line="29" col="24" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:14:6" my-argnr="2" my-argname="str" file="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c" line="35" col="22" value="0"/>
+    <unsafe-usage my-id="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.h:17:6" my-argnr="2" my-argname="pattern" file="/home/mathias/Documents/C/CUtils/datatypes/string/cstring.c" line="52" col="32" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="String_new" lineNumber="10"/>
+    <functiondecl functionName="String_delete" lineNumber="20"/>
+    <functiondecl functionName="String_len" lineNumber="27"/>
+    <functiondecl functionName="String_append" lineNumber="32"/>
+    <functiondecl functionName="String_push" lineNumber="40"/>
+    <functiondecl functionName="String_contains" lineNumber="49"/>
+    <functioncall functionName="calloc"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="realloc"/>
+    <functioncall functionName="strcat"/>
+    <functioncall functionName="strcpy"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncmp"/>
+  </FileInfo>
+</analyzerinfo>

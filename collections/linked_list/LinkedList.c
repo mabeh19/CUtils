@@ -93,9 +93,9 @@ RESULT(int) LinkedList_Pop(LinkedList* list)
 
     LinkedListElement* last = _l->first;
     while (last->next->next) last = last->next;
-    int val = last->next->next->val;
-    free(last->next->next);
-    last->next->next = NULL;
+    int val = last->next->val;
+    free(last->next);
+    last->next = NULL;
     _l->len--;
 
     return RESULT_OK(int, val);
