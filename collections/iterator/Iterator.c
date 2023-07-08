@@ -31,17 +31,11 @@ Iterator* Iterator_FromArray(const void* array, size_t elem_size, size_t len)
 
 void Iterator_Delete(Iterator *iter)
 {
-    Iterator_t* i = (Iterator_t*) iter;
-    if (i->next) {
-        Iterator_t* last = i;
-        i = i->next;
-        while (i) {
-            free(last);
-            last = i;
-            i = i->next;
-        }
-    } else {
+    Iterator_t *i = (Iterator_t*)iter;
+    while (i) {
+        Iterator_t *next = i->next;
         free(i);
+        i = next;
     }
 }
 

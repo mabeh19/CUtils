@@ -16,4 +16,4 @@ all:
 	ar rcs libcutils *.o
 
 clean:
-	rm -r *.o
+	rm -r *.o *.a

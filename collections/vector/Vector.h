@@ -139,3 +139,4 @@ DECLARE_VECTOR_TYPE(float)
 DECLARE_VECTOR_TYPE(double)
 
 #endif /* __VECTOR_H__ */
+

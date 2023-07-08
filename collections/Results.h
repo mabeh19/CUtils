@@ -42,3 +42,4 @@ DEF_RESULT(float);
 DEF_RESULT(double);
 
 #endif 
+

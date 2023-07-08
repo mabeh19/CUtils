@@ -19,3 +19,4 @@ void Iterator_InsertSortBy(Iterator* iter, bool (*comp)(void*, void*));
 void Iterator_Delete(Iterator* iter);
 
 #endif /* __ITERATOR_H__ */
+

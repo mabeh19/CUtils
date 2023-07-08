@@ -18,3 +18,4 @@ bool String_contains(String* string, const char* pattern);
 
 
 #endif /* __STRING_H__ */
+
