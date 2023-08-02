@@ -8,3 +8,4 @@ phony: all
 
 all:
 	$(CC) $(FLAGS) $(SOURCES) -o $(TARGET)
+	$(CC) test_utest.c uTest/uTest.c ../collections/linked_list/LinkedList.c -o test_utest
