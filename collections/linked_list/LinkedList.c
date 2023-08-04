@@ -120,3 +120,21 @@ RESULT(LinkedListElement) LinkedList_Pop(LinkedList* list)
     return RESULT_OK(LinkedListElement, val);
 }
 
+
+void LinkedList_ForEach(LinkedList* list, void (*callback)(void*))
+{
+    if (!list || !callback)
+        return;
+
+    AS_INTERNAL();
+
+    LinkedListElement_t* elem = _l->first;
+
+    while (elem) {
+        LinkedListElement_t* next = elem->next;
+        callback(elem->val);
+        elem = next;
+    }
+}
+
+

@@ -17,5 +17,6 @@ RESULT(LinkedListElement) LinkedList_Get(const LinkedList* list, size_t index);
 RESULT(size_t) LinkedList_Len(const LinkedList* list);
 RESULT(size_t) LinkedList_Push(LinkedList* list, void *val);
 RESULT(LinkedListElement) LinkedList_Pop(LinkedList* list);
+void LinkedList_ForEach(LinkedList* list, void (*callback)(void*));
 
 #endif
