@@ -23,11 +23,11 @@ void uTest_RegisterTest(uTest_UnitTest test);
 uTest_Result uTest_Run(void);
 
 
-#define uTest_Assert(expr)  uTest_Assert_(expr, __func__, #expr)
-void uTest_Assert_(bool expr, const char* funcName, const char* exprText);
+#define uTest_Assert(expr)  uTest_Assert_(expr, __func__, __LINE__, #expr)
+void uTest_Assert_(bool expr, const char* funcName, size_t line, const char* exprText);
 
-#define uTest_AssertEqual(p1, p2, size) uTest_AssertEqual_(p1, p2, size, __FUNC__)
-void uTest_AssertEqual_(void* p1, void* p2, size_t size, const char* funcName);
+#define uTest_AssertEqual(p1, p2, size) uTest_AssertEqual_(p1, p2, size, __func__, __LINE__, #p1 " == " #p2)
+void uTest_AssertEqual_(void* p1, void* p2, size_t size, const char* funcName, size_t line, const char* exprText);
 
 
 #ifdef __cplusplus

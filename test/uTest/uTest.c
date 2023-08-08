@@ -17,6 +17,7 @@ struct uTest_Context {
         jmp_buf exitPoint;
         const char *funcName;
         const char *error;
+        size_t line;
     } uut;
 } utest_context;
 
@@ -40,24 +41,25 @@ uTest_Result uTest_Run(void)
 }
 
 
-void uTest_Assert_(bool expr, const char *name, const char *exprText)
+void uTest_Assert_(bool expr, const char *name, size_t line, const char *exprText)
 {
     utest_context.uut.funcName = name;
     if (!expr) {
         utest_context.uut.error = exprText;
+        utest_context.uut.line = line;
         longjmp(utest_context.uut.exitPoint, 1);
     }
 }
 
 
-void uTest_AssertEqual_(void *p1, void *p2, size_t size, const char *name)
+void uTest_AssertEqual_(void* p1, void* p2, size_t size, const char* funcName, size_t line, const char* exprText)
 {
 static char errorText[20];
 
     if (memcmp(p1, p2, size)) {
-        snprintf(errorText, sizeof(errorText), "%p[%llu] != %p[%llu]", p1, size, p2, size);
-        utest_context.uut.funcName = name;
-        utest_context.uut.error = errorText;
+        utest_context.uut.funcName = funcName;
+        utest_context.uut.error = exprText;
+        utest_context.uut.line = line;
         longjmp(utest_context.uut.exitPoint, 1);
     }
 }
@@ -76,7 +78,7 @@ static char logMsg[200];
     }
     else if (ret > 0) {
         utest_context.result.numErrors++;
-        snprintf(logMsg, sizeof(logMsg), "[ERROR  ] in %s => %s", utest_context.uut.funcName, utest_context.uut.error);
+        snprintf(logMsg, sizeof(logMsg), "[ERROR  ] in %s:%zu => %s", utest_context.uut.funcName, utest_context.uut.line, utest_context.uut.error);
     }
 
     uTest_LogResult(logMsg);
