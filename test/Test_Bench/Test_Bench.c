@@ -9,31 +9,37 @@ typedef struct Test_Bench_Result {
     String* name;
     double seconds;
     size_t iterations;
+
+    struct Test_Bench_Result *next;
 } Test_Bench_Result;
 
 DEF_RESULT(Test_Bench_Result);
-DECLARE_VECTOR_TYPE(Test_Bench_Result)
-DEFINE_VECTOR_TYPE(Test_Bench_Result)
+DECLARE_VECTOR_TYPE(Test_Bench_Result);
+DEFINE_VECTOR_TYPE(Test_Bench_Result);
 
 
 static void T_Bench_PrintResult(const void* result);
 static void T_Bench_CleanUp(const void *test);
 
-Vector* test_bench_results = NULL;
 
-
+struct tb_results {
+    Test_Bench_Result *results;
+} tb_results;
 
 void T_Bench_RegisterResult(const char* name, double result, size_t iterations)
 {
-    if (test_bench_results == NULL) {
-        test_bench_results = Vector_New(Test_Bench_Result);
-    }
     struct Test_Bench_Result tbenchResult = {
         .name = String_new(name),
         .seconds = result, 
-        .iterations = iterations
+        .iterations = iterations,
+        .next = NULL
     };
-    Vector_Push(Test_Bench_Result, test_bench_results, tbenchResult);
+
+    Test_Bench_Result **res = &tb_results.results;
+    while (*res) 
+        res = &(*res)->next;
+    *res = malloc(sizeof tbenchResult);
+    **res = tbenchResult;
 }
 
 

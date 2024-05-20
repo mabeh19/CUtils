@@ -28,6 +28,11 @@ size_t T_Bench_GetTimeStamp(void)
     return clock();
 }
 
+void T_Bench_LogResult(const char *msg)
+{
+    printf("%s", msg);
+}
+
 int main()
 {
     int A[10][10], B[10][10];
@@ -36,8 +41,8 @@ int main()
     memset(A, 0xAA, sizeof(A));
     memset(B, 0x55, sizeof(B));
 
-    T_Bench_Run("t_bench_test", 1000, t_bench_test, buffer, 1000);
-    T_Bench_Run("t_mat_mul", 1e3, t_mat_mul, 10, 10, A, B);
+    T_Bench_Run(t_bench_test, 1000, buffer, 1000);
+    T_Bench_Run(t_mat_mul, 1e3, 10, 10, A, B);
     T_Bench_ShowResults();
 }
 

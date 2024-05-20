@@ -110,6 +110,8 @@ static void HashMap_reinitTable(HashMap *map, KeyVector **newTable)
             KeyVector_getKeyValPair(vec, j, &k, &v);
 
             uint32_t index = __hashingFunction__(_map, k);
+
+            // TODO
         }
     }
 }
