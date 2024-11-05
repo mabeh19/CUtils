@@ -6,14 +6,16 @@
 
 uTest_CreateGlobalContext();
 
-void register_extra_tests(void);
 
-
-void unit_test(void)
+UTEST_TEST(Base, unit_test)
 {
-    uTest_Assert(100 != 100);
+    uTest_AssertNotEqual(100, 100);
 }
 
+UTEST_TEST(Base, utest_float)
+{
+    uTest_AssertNotEqual(3.14F, 3.14F);
+}
 
 void uTest_LogResult(const char *msg)
 {
@@ -27,10 +29,7 @@ unsigned long long uTest_Time(void)
 
 int main()
 {
-    uTest_Register(unit_test);
-    uTest_SetVerbosity(UTEST_LOG_SUCCESS | UTEST_LOG_DURATION);
-
-    register_extra_tests();
+    uTest_SetVerbosity(0);
 
     uTest_Run();
 
